@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>JS Blackjack</h1>
+        <h3 id="comments"> Start</h3>
+        <div class="buttons">
+            <Button id="start" onclick="playingDeck = start()"> Start </Button>
+            <Button class="hdnButton" onclick="hit()"> Hit </Button>
+            <button class="hdnButton" onclick="stan()"> Stan </button>
+            <Button id="reset" class="hdnButton" onclick="reset()"> Reset </Button>
+
+        </div>
+        <div class="row" id="board">
+            <div class="col">
+                <h1>Dealer: <span id="dealer">0</span></h1>
+                <div id="dealerBoard">
+                    <img class="card" src="./images/cards/backside.png" alt="">
+                </div>
+            </div>
+            <div class="col">
+                <h1>Player: <span id="player">0</span></h1>
+                <div id="playerBoard">
+                    <img class="card" src="./images/cards/backside.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
